@@ -54,12 +54,12 @@ export default function Home() {
           </div>
           <div className="col-start-6 col-span-2 m-2 text-justify border-solid rounded-[10px] border-[1px] border-gray-200
             hover:text-blue-500 hover:border-blue-600 cursor-pointer">
-            <a href="https://blog.naver.com/" target='_blank' rel="noreferrer noopener" >
+            <Link href="/random">
               <h2 className="text-center m-1 text-sm"> link
                 <p className="mt-3.5 font-normal text-xs"> Tailwind</p>
                 <p className="mt-1 font-normal text-[0.5rem]">  학습하기 </p>
               </h2>
-            </a>
+            </Link>
           </div>
 
         </div>
