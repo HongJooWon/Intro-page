@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Slider({ children }) {
+export default function Slider({ slides }) {
     const [position, setPosition] = useState(0);
 
     const totalSlides = 5;
@@ -26,7 +26,8 @@ export default function Slider({ children }) {
         <div className="w-2/5 h-3/5" style={{ backgroundColor: slideColors[position] }}>
             <button onClick={slideLeft}>Left</button>
             <button onClick={slideRight}>Right</button>
-            <div>Position: {position + 1}</div> {/* 슬라이드 번호를 1부터 시작하도록 표시 */}
+            <div>Position: {position + 1}</div>
+            <div>{slides[position + 1]}</div>
         </div>
         </div>
   );
