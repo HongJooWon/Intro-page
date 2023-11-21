@@ -1,10 +1,10 @@
-import Footer from '../components/footer'
+import SlideInput from '../components/SlideInput';
 
-export default function Layout({ children }) {
+export default function Random({ children }) {
     return (
-        <>
-        <div>링크 이동</div>
-        <Footer></Footer>
-        </>
+        <div>
+        <h1>Slide Input</h1>
+        <SlideInput />
+        </div>
     )
   }
